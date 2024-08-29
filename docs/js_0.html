@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+
+    <script>
+      MathJax = {
+        chtml: {
+          displayAlign: "left",
+          displayIndent: "1em",
+        },
+      };
+    </script>
+
+    
+
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>教育カリキュラム</title>
+  </head>
+
+  <body>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+      <div id="g-nav-list">
+        <!-- ---------------------------------------- -->
+         <ul>
+<li><a href="#概要" id="toc-概要"><span
+class="toc-section-number">1</span> 概要</a>
+<ul>
+<li><a href="#前回の復習" id="toc-前回の復習"><span
+class="toc-section-number">1.1</span> 前回の復習</a></li>
+<li><a href="#今回の講義の達成目標" id="toc-今回の講義の達成目標"><span
+class="toc-section-number">1.2</span> 今回の講義の達成目標</a></li>
+</ul></li>
+<li><a href="#はじめに" id="toc-はじめに"><span
+class="toc-section-number">2</span> はじめに</a></li>
+<li><a href="#変数" id="toc-変数"><span
+class="toc-section-number">3</span> 変数</a>
+<ul>
+<li><a href="#変数の種類" id="toc-変数の種類"><span
+class="toc-section-number">3.1</span> 変数の種類</a></li>
+<li><a href="#letとconstの違い" id="toc-letとconstの違い"><span
+class="toc-section-number">3.2</span> letとconstの違い</a></li>
+</ul></li>
+<li><a href="#数値型" id="toc-数値型"><span
+class="toc-section-number">4</span> 数値型</a>
+<ul>
+<li><a href="#数値型とは" id="toc-数値型とは"><span
+class="toc-section-number">4.1</span> 数値型とは</a></li>
+<li><a href="#加算と減算" id="toc-加算と減算"><span
+class="toc-section-number">4.2</span> 加算と減算</a></li>
+<li><a href="#乗算" id="toc-乗算"><span
+class="toc-section-number">4.3</span> 乗算</a></li>
+<li><a href="#割り算" id="toc-割り算"><span
+class="toc-section-number">4.4</span> 割り算</a></li>
+<li><a href="#余り余剰" id="toc-余り余剰"><span
+class="toc-section-number">4.5</span> 余り(余剰)</a></li>
+<li><a href="#四則演算のルール" id="toc-四則演算のルール"><span
+class="toc-section-number">4.6</span> 四則演算のルール</a></li>
+</ul></li>
+<li><a href="#文字列" id="toc-文字列"><span
+class="toc-section-number">5</span> 文字列</a>
+<ul>
+<li><a href="#文字列とは" id="toc-文字列とは"><span
+class="toc-section-number">5.1</span> 文字列とは</a></li>
+</ul></li>
+<li><a href="#関数" id="toc-関数"><span
+class="toc-section-number">6</span> 関数</a>
+<ul>
+<li><a href="#関数の基本" id="toc-関数の基本"><span
+class="toc-section-number">6.1</span> 関数の基本</a></li>
+<li><a href="#関数のパラメータと戻り値"
+id="toc-関数のパラメータと戻り値"><span
+class="toc-section-number">6.2</span> 関数のパラメータと戻り値</a></li>
+<li><a href="#関数のスコープ" id="toc-関数のスコープ"><span
+class="toc-section-number">6.3</span> 関数のスコープ</a></li>
+</ul></li>
+</ul> 
+        <!-- ---------------------------------------- -->
+      </div>
+    </nav>
+
+    <header class="markdown-body">
+      <p>オンラインテキストテンプレート</p>
+      <p>2024/04/23</p>
+    </header>
+
+    <main class="markdown-body">
+      <!-- ---------------------------------------- -->
+      <h1 data-number="1" id="概要"><span
+      class="header-section-number">1</span> 概要</h1>
+      <h2 data-number="1.1" id="前回の復習"><span
+      class="header-section-number">1.1</span> 前回の復習</h2>
+      <ul>
+      <li>ここに前回学んだもの(予定だとHTMLとCSS)の復習を書く。</li>
+      </ul>
+      <h2 data-number="1.2" id="今回の講義の達成目標"><span
+      class="header-section-number">1.2</span> 今回の講義の達成目標</h2>
+      <div class="note type-intro">
+      <p><strong>達成目標</strong></p>
+      <ol type="1">
+      <li><p>JavaScriptの基本的な記述方法を学ぼう。</p></li>
+      <li></li>
+      </ol>
+      </div>
+      <h1 data-number="2" id="はじめに"><span
+      class="header-section-number">2</span> はじめに</h1>
+      <ul>
+      <li><p>今回は、JavaScriptの基礎について学ぶ。</p></li>
+      <li><p>HTMLに動的な動作を加えるには、<u>JavaScript</u>を使うと便利である。</p></li>
+      <li><p>ひとまず、JavaScriptが動作するかの確認をしてみよう。</p></li>
+      <li><p>これまで作成してきたファイルを同じ手順で、HTMLがあるフォルダーと同じ階層に<strong>main.js</strong>という名前のファイルを作成しよう。
+      拡張子が<strong>.js</strong>となるものがJavaScriptとして認識されます。</p></li>
+      <li><p>試しに、作ったJavaScriptファイルに、このように書いてみよう。
+      (詳しい説明は後ほど行います)</p></li>
+      </ul>
+      <div class="sourceCode" id="cb1" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">alert</span>(<span class="dv">10</span>)<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li>ただし、これだけでは、HTMLにこのJavaScriptファイルを読み込んでくれない。
+      なので、HTMLの<strong>body</strong>内にこのように書いて読み込ませる必要がある。</li>
+      </ul>
+      <div class="sourceCode" id="cb2" data-caption="index.html"><pre
+      class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;main.js&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div>
+      <ul>
+      <li>この<strong>script</strong>タグで、JavaScriptを読み込んでくれるようになり、<strong>src</strong>属性で、どのJavaScriptファイルを読み込むかを記述する。</li>
+      </ul>
+      <hr />
+      <ul>
+      <li>このHTMLを読み込むと、以下の画像のようなものが表示される。
+      この画面が表示されたら成功である。</li>
+      </ul>
+      <figure>
+      <img src="figs/js/js_alert.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <div class="note type-tips">
+      <p>表示される画面はブラウザによって異なるが、<strong>10</strong>が表示されていればOK</p>
+      </div>
+      <p>ここで、次に先程のJavaScriptファイルをこのように変えてみよう。</p>
+      <div class="sourceCode" id="cb3" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">alert</span>(<span class="dv">30</span>)<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li><p>10だったところを30に変えてみた。
+      こうするとどうなるか予想してみよう！</p></li>
+      <li><p>答え <span class="masked"> 10の表示が30に変わる
+      </span></p></li>
+      </ul>
+      <hr />
+      <ul>
+      <li>とりあえず今は<br><em>「alert();と書いて、括弧の中に書いたものが表示される」</em>という考え方でOK</li>
+      </ul>
+      <div class="note type-quiz">
+      <p>Q. このように記述すると、以下のどれが表示されるか選べ。</p>
+      <div class="sourceCode" id="cb4" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">alert</span>(<span class="dv">100</span>)<span class="op">;</span></span></code></pre></div>
+      <div class="quizes">
+      <div class="options">
+      <div class="option incorrect">
+      1
+      </div>
+      <div class="option incorrect">
+      10
+      </div>
+      <div class="option correct">
+      100
+      </div>
+      <div class="option incorrect">
+      1000
+      </div>
+      </div>
+      <div class="answercontent">
+      <p>括弧の中に書いたものが表示されるため、<u>100</u>が正解です。</p>
+      </div>
+      </div>
+      </div>
+      <h1 data-number="3" id="変数"><span
+      class="header-section-number">3</span> 変数</h1>
+      <ul>
+      <li><p>プログラミングにおいて、変数はデータを格納するための箱のようなものです。変数には値を代入して保持し、後でその値を参照したり変更したりすることができます。</p></li>
+      <li><p>JavaScriptでは、変数を宣言する際、 <code>let</code> や
+      <code>const</code>、<code>var</code>
+      のキーワードを使用します。それぞれの違いについては後述します。</p></li>
+      <li><p>例えば、以下のように変数を宣言して値を代入することができます。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb5" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">let</span> age <span class="op">=</span> <span class="dv">30</span><span class="op">;</span> <span class="co">// 数値型の変数</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">let</span> name <span class="op">=</span> <span class="st">&quot;Alice&quot;</span><span class="op">;</span> <span class="co">// 文字列型の変数</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="kw">const</span> <span class="cn">PI</span> <span class="op">=</span> <span class="fl">3.14</span><span class="op">;</span> <span class="co">// 定数の宣言</span></span></code></pre></div>
+      <ul>
+      <li>変数を使用することで、同じ値を繰り返し使用したり、値を保持しておいて後で利用することができます。</li>
+      </ul>
+      <h2 data-number="3.1" id="変数の種類"><span
+      class="header-section-number">3.1</span> 変数の種類</h2>
+      <ol type="1">
+      <li><p><code>let</code>:
+      変数を宣言する際に使用されるキーワード。再代入が可能な変数を宣言する際に使用します。</p></li>
+      <li><p><code>const</code>:
+      定数を宣言する際に使用されるキーワード。一度値を代入すると後から変更できません。</p></li>
+      <li><p><code>var</code>:
+      古いバージョンのJavaScriptで使用されていた変数宣言キーワード。<code>let</code>
+      や <code>const</code> の使用が推奨されています。</p></li>
+      </ol>
+      <ul>
+      <li>変数を使うことで、データを保持し、処理を行う際に柔軟に値を扱うことができます。次のセクションでは、変数を使用した実践的な例を見ていきましょう。</li>
+      </ul>
+      <div class="sourceCode" id="cb6" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">let</span> age <span class="op">=</span> <span class="dv">30</span><span class="op">;</span> <span class="co">// 数値型の変数</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(age)<span class="op">;</span> <span class="co">// --&gt; 30</span></span></code></pre></div>
+      <ul>
+      <li><p>このように記述すると、先程宣言したageの内容が出力されます。</p></li>
+      <li><p>そうです。<u>宣言した内容を記憶してくれます。</u></p></li>
+      <li><p>また、<code>let</code>だと、後ほど変更することも可能です。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb7" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">let</span> age <span class="op">=</span> <span class="dv">30</span><span class="op">;</span> <span class="co">// 数値型の変数</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(age)<span class="op">;</span> <span class="co">// --&gt;30</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a>age <span class="op">=</span> <span class="dv">31</span><span class="op">;</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(age)<span class="op">;</span> <span class="co">// --&gt;31</span></span></code></pre></div>
+      <h2 data-number="3.2" id="letとconstの違い"><span
+      class="header-section-number">3.2</span> letとconstの違い</h2>
+      <ul>
+      <li>letは、宣言した後でも、後ほど変更することが可能ですが、constは、<u>一度宣言すると内容を変更することができません。</u>
+      変更されることがないようなときに使用します。</li>
+      </ul>
+      <div class="sourceCode" id="cb8" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">const</span> age <span class="op">=</span> <span class="dv">30</span><span class="op">;</span> <span class="co">// 数値型の定数</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(age)<span class="op">;</span> <span class="co">// --&gt;30</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a></span>
+<span id="cb8-4"><a href="#cb8-4"></a>age <span class="op">=</span> <span class="dv">31</span><span class="op">;</span> <span class="co">// --&gt; エラー</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(age)<span class="op">;</span></span></code></pre></div>
+      <div class="note type-quiz">
+      <p>Q.
+      このように記述すると、以下のどれがコンソールに表示されるか予想してみよう。</p>
+      <div class="sourceCode" id="cb9" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">let</span> a <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(A)<span class="op">;</span></span></code></pre></div>
+      <div class="quizes">
+      <div class="options">
+      <div class="option incorrect">
+      0
+      </div>
+      <div class="option incorrect">
+      A
+      </div>
+      <div class="option correct">
+      エラー
+      </div>
+      </div>
+      <div class="answercontent">
+      <p>実は、変数は大文字と小文字も区別します。そのためAという変数が宣言されておらず、「Aが定義されていない」というエラーが表示されます。</p>
+      </div>
+      </div>
+      </div>
+      <h1 data-number="4" id="数値型"><span
+      class="header-section-number">4</span> 数値型</h1>
+      <h2 data-number="4.1" id="数値型とは"><span
+      class="header-section-number">4.1</span> 数値型とは</h2>
+      <ul>
+      <li><p>さて、先程「10」や「30」と入力してきましたが、これらのことをプログラミングでは<em>数値型</em>と言います。</p></li>
+      <li><p>それでは、今度は四則演算を行っていきたいのですが、その前に今度は<code>console.log();</code>というものを使っていきます。</p></li>
+      <li><p>ひとまず、以下のコードを書いてみよう。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb10" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="dv">10</span>)<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li>これを保存してHTMLを読み込んでも、一見変化がないように見える。</li>
+      <li>ここで、<code>F12キー</code>を押してみよう。すると、いかにも「自分プログラミングしてる！」て感じの画面が出てきます。(初回は開くかどうか尋ねられることもあるので、その場合は許可をしよう)</li>
+      </ul>
+      <figure>
+      <img src="figs/js/js_console.log.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <ul>
+      <li>そして、ここに表示されている「10」が、今回私たちが入力したものである。
+      この画面のことを<em>コンソール</em>と言う。</li>
+      </ul>
+      <h2 data-number="4.2" id="加算と減算"><span
+      class="header-section-number">4.2</span> 加算と減算</h2>
+      <ul>
+      <li>足し算をしたい場合は<code>+</code>、引き算は<code>-</code>を使用する。</li>
+      </ul>
+      <div class="sourceCode" id="cb11" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="dv">10</span> <span class="op">+</span> <span class="dv">2</span>)<span class="op">;</span> <span class="co">// --&gt; 12</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="dv">10</span> <span class="op">-</span> <span class="dv">2</span>)<span class="op">;</span> <span class="co">// --&gt; 8</span></span></code></pre></div>
+      <h2 data-number="4.3" id="乗算"><span
+      class="header-section-number">4.3</span> 乗算</h2>
+      <ul>
+      <li>かけ算をしたい場合は×…
+      と思いきや<code>*</code>(アスタリスク)を使用する。</li>
+      </ul>
+      <div class="sourceCode" id="cb12" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb12-1"><a href="#cb12-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="dv">10</span> <span class="op">*</span> <span class="dv">2</span>)<span class="op">;</span> <span class="co">// --&gt; 20</span></span></code></pre></div>
+      <h2 data-number="4.4" id="割り算"><span
+      class="header-section-number">4.4</span> 割り算</h2>
+      <ul>
+      <li>割り算をしたい場合は<code>/</code>を使用する。</li>
+      </ul>
+      <div class="sourceCode" id="cb13" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb13-1"><a href="#cb13-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="dv">10</span> <span class="op">/</span> <span class="dv">2</span>)<span class="op">;</span> <span class="co">// --&gt; 5</span></span></code></pre></div>
+      <h2 data-number="4.5" id="余り余剰"><span
+      class="header-section-number">4.5</span> 余り(余剰)</h2>
+      <ul>
+      <li>割り算をしたときの余りが欲しい場合は<code>%</code>を使用する。</li>
+      </ul>
+      <div class="sourceCode" id="cb14" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb14-1"><a href="#cb14-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="dv">10</span> <span class="op">%</span> <span class="dv">2</span>)<span class="op">;</span> <span class="co">// --&gt; 0</span></span></code></pre></div>
+      <h2 data-number="4.6" id="四則演算のルール"><span
+      class="header-section-number">4.6</span> 四則演算のルール</h2>
+      <ul>
+      <li>計算に関しては、括弧を使うことで、加算・減算を優先させることができる。</li>
+      </ul>
+      <div class="sourceCode" id="cb15" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb15-1"><a href="#cb15-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>( <span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span>  <span class="op">*</span> <span class="dv">3</span>)<span class="op">;</span> <span class="co">// --&gt; 7</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>((<span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span>) <span class="op">*</span> <span class="dv">3</span>)<span class="op">;</span> <span class="co">// --&gt; 9</span></span></code></pre></div>
+      <p><br></p>
+      <div class="note type-caution">
+      <p>括弧が重なる場合でも、中括弧や大括弧は使用せず、全て括弧で囲おう。
+      中括弧や大括弧だと別の意味として扱われてしまいます。 <br> 例：{(1
+      + 2) / 3} × 4 (= 4)を計算したい場合</p>
+      <div class="sourceCode" id="cb16" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb16-1"><a href="#cb16-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>( {(<span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span>) <span class="op">/</span> <span class="dv">3</span>} <span class="op">*</span> <span class="dv">4</span> )<span class="op">;</span> <span class="co">// --&gt; エラー</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>( ((<span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span>) <span class="op">/</span> <span class="dv">3</span>) <span class="op">*</span> <span class="dv">4</span> )<span class="op">;</span> <span class="co">// --&gt; 4</span></span></code></pre></div>
+      </div>
+      <p><br></p>
+      <div class="note type-quiz">
+      <p>Q.
+      このように記述すると、以下のどれがコンソールに表示されるか選べ。</p>
+      <div class="sourceCode" id="cb17" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb17-1"><a href="#cb17-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>((<span class="dv">300</span> <span class="op">+</span> <span class="dv">20</span>) <span class="op">%</span> <span class="dv">10</span>)<span class="op">;</span></span></code></pre></div>
+      <div class="quizes">
+      <div class="options">
+      <div class="option incorrect">
+      320
+      </div>
+      <div class="option incorrect">
+      32
+      </div>
+      <div class="option correct">
+      0
+      </div>
+      <div class="option incorrect">
+      3
+      </div>
+      </div>
+      <div class="answercontent">
+      <p>300 +
+      20は320となり、そこから10で割った余り(余剰)を出力するので、答えは<u>0</u>となります。</p>
+      </div>
+      </div>
+      </div>
+      <h1 data-number="5" id="文字列"><span
+      class="header-section-number">5</span> 文字列</h1>
+      <ul>
+      <li>数字ばかり出力させても面白くないですよね。ということで、次は文字を出力させてみよう！(文字も面白いかと言われると微妙だけど…)</li>
+      </ul>
+      <h2 data-number="5.1" id="文字列とは"><span
+      class="header-section-number">5.1</span> 文字列とは</h2>
+      <ul>
+      <li><p>プログラミングにて、文字のことを<em>文字列</em>と言います。</p></li>
+      <li><p>JavaScriptにおける文字列とは、テキストデータを表現するためのデータ型です。文字列は、シングルクォート
+      <code>'</code> もしくはダブルクォート <code>"</code>
+      で囲むことで表現されます。</p></li>
+      <li><p>試しに、「Hello,
+      World!」という文字をコンソールに出力してみましょう。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb18" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb18-1"><a href="#cb18-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;Hello, World!&quot;</span>)<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li>これでHTMLを開くと、このようになる。</li>
+      </ul>
+      <figure>
+      <img src="figs/js/HelloWorld.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <ul>
+      <li><code>'</code>や<code>"</code>で囲ったものを文字列として扱われます。</li>
+      </ul>
+      <div class="note type-senior">
+      <p>「’」や「“」を文字列として扱うには</p>
+      <p>主なやり方は2種類あります。</p>
+      <ol type="1">
+      <li>囲ったものはもう片方の方で記述する。</li>
+      </ol>
+      <div class="sourceCode" id="cb19" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb19-1"><a href="#cb19-1"></a><span class="co">// シングルクォートで囲った場合はダブルクォートで</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;A&quot;B&quot;C&#39;</span>)<span class="op">;</span> <span class="co">// --&gt; A&quot;B&quot;C</span></span>
+<span id="cb19-3"><a href="#cb19-3"></a></span>
+<span id="cb19-4"><a href="#cb19-4"></a><span class="co">// ダブルクォートで囲った場合はシングルクォートで</span></span>
+<span id="cb19-5"><a href="#cb19-5"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;I&#39;m fine.&quot;</span>)<span class="op">;</span> <span class="co">// --&gt; I&#39;m fine.</span></span></code></pre></div>
+      <ol start="2" type="1">
+      <li><em>バックスラッシュ\</em>を手前に書く。</li>
+      </ol>
+      <div class="sourceCode" id="cb20" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb20-1"><a href="#cb20-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;A</span><span class="sc">\&quot;</span><span class="st">B</span><span class="sc">\&#39;</span><span class="st">C&quot;</span>)<span class="op">;</span> <span class="co">// --&gt; A&quot;B&#39;C</span></span></code></pre></div>
+      </div>
+      <h1 data-number="6" id="関数"><span
+      class="header-section-number">6</span> 関数</h1>
+      <h2 data-number="6.1" id="関数の基本"><span
+      class="header-section-number">6.1</span> 関数の基本</h2>
+      <ul>
+      <li><p>プログラミングにおいて、関数は特定の処理をまとめて再利用可能な形で定義するための仕組みです。関数を使用することで、同じ処理を繰り返し記述する必要がなくなり、コードの再利用性や保守性が向上します。</p></li>
+      <li><p>JavaScriptにおいて、関数は以下のように定義されます。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb21" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">// 関数の宣言</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a><span class="kw">function</span> <span class="fu">greet</span>() {</span>
+<span id="cb21-3"><a href="#cb21-3"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;Hello, World!&quot;</span>)<span class="op">;</span></span>
+<span id="cb21-4"><a href="#cb21-4"></a>}</span>
+<span id="cb21-5"><a href="#cb21-5"></a></span>
+<span id="cb21-6"><a href="#cb21-6"></a><span class="co">// 関数の呼び出し</span></span>
+<span id="cb21-7"><a href="#cb21-7"></a><span class="fu">greet</span>()<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li>上記の例では、<code>greet</code>
+      という関数が定義されており、その中で <code>"Hello, World!"</code>
+      というメッセージがコンソールに出力されます。関数を呼び出すことで、定義された処理が実行されます。</li>
+      </ul>
+      <h2 data-number="6.2" id="関数のパラメータと戻り値"><span
+      class="header-section-number">6.2</span>
+      関数のパラメータと戻り値</h2>
+      <p>関数名の括弧内に変数を書くことで、その関数内でその変数を使用することができます。
+      <em>これをパラメータ(引数)</em>と言います。</p>
+      <div class="sourceCode" id="cb22" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb22-1"><a href="#cb22-1"></a><span class="co">// 関数の宣言</span></span>
+<span id="cb22-2"><a href="#cb22-2"></a><span class="kw">function</span> <span class="fu">greet</span>(p) {</span>
+<span id="cb22-3"><a href="#cb22-3"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(p)<span class="op">;</span></span>
+<span id="cb22-4"><a href="#cb22-4"></a>}</span>
+<span id="cb22-5"><a href="#cb22-5"></a></span>
+<span id="cb22-6"><a href="#cb22-6"></a><span class="co">// 関数の呼び出し</span></span>
+<span id="cb22-7"><a href="#cb22-7"></a><span class="fu">greet</span>(<span class="st">&quot;Hello, World!&quot;</span>)<span class="op">;</span>　<span class="co">// --&gt; Hello, World!</span></span></code></pre></div>
+      <ul>
+      <li><p>関数はパラメータを受け取り、処理を行った結果を<em>戻り値</em>として返すことができます。パラメータは関数に渡す値であり、戻り値は関数から返される値です。</p></li>
+      <li><p>以下は、パラメータと戻り値を持つ関数の例です。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb23" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb23-1"><a href="#cb23-1"></a><span class="kw">function</span> <span class="fu">add</span>(a<span class="op">,</span> b) {</span>
+<span id="cb23-2"><a href="#cb23-2"></a>  <span class="co">// returnの内容が結果として出るようになる</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a>  <span class="cf">return</span> a <span class="op">+</span> b<span class="op">;</span></span>
+<span id="cb23-4"><a href="#cb23-4"></a>}</span>
+<span id="cb23-5"><a href="#cb23-5"></a></span>
+<span id="cb23-6"><a href="#cb23-6"></a><span class="kw">let</span> result <span class="op">=</span> <span class="fu">add</span>(<span class="dv">5</span><span class="op">,</span> <span class="dv">3</span>)<span class="op">;</span></span>
+<span id="cb23-7"><a href="#cb23-7"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(result)<span class="op">;</span> <span class="co">// --&gt; 8</span></span></code></pre></div>
+      <ul>
+      <li>上記の例では、<code>add</code>
+      という関数が定義されており、2つのパラメータ <code>a</code> と
+      <code>b</code>
+      を受け取り、それらを足した結果を戻り値として返しています。関数を呼び出す際に引数として
+      <code>5</code> と <code>3</code> を渡し、結果 <code>8</code>
+      がコンソールに出力されます。</li>
+      </ul>
+      <h2 data-number="6.3" id="関数のスコープ"><span
+      class="header-section-number">6.3</span> 関数のスコープ</h2>
+      <ul>
+      <li><p>関数内で宣言された変数はその関数内でのみ有効であり、関数外からはアクセスできません。これを関数スコープと呼びます。</p></li>
+      <li><p>関数スコープを示す例を以下に示します。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb24" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb24-1"><a href="#cb24-1"></a><span class="kw">function</span> <span class="fu">greet</span>() {</span>
+<span id="cb24-2"><a href="#cb24-2"></a>  <span class="kw">let</span> message <span class="op">=</span> <span class="st">&quot;Hello, World!&quot;</span><span class="op">;</span></span>
+<span id="cb24-3"><a href="#cb24-3"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(message)<span class="op">;</span></span>
+<span id="cb24-4"><a href="#cb24-4"></a>}</span>
+<span id="cb24-5"><a href="#cb24-5"></a></span>
+<span id="cb24-6"><a href="#cb24-6"></a><span class="fu">greet</span>()<span class="op">;</span></span>
+<span id="cb24-7"><a href="#cb24-7"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(message)<span class="op">;</span> <span class="co">// -- &gt; エラー</span></span></code></pre></div>
+      <ul>
+      <li>上記の例では、<code>message</code> 変数は <code>greet</code>
+      関数内で定義されており、関数外からはアクセスできません。関数スコープによって変数のスコープが制限されることで、変数名の衝突や意図しない変更を防ぐことができます。</li>
+      </ul>
+      <!-- ---------------------------------------- -->
+    </main>
+
+    <footer class="markdown-body">
+      <p><a href="index.html">講義資料のIndexに移動</a></p>
+    </footer>
+
+    <script>
+      window.onload = function () {
+        // ナビゲーション関連
+        let openBtn = document.getElementsByClassName("openbtn")[0];
+        let navPnl = document.getElementById("g-nav");
+        openBtn.onclick = () => {
+          openBtn.classList.toggle("active");
+          navPnl.classList.toggle("panelactive");
+        };
+
+        let items = navPnl.getElementsByTagName("a");
+        Array.from(items).forEach((item) => {
+          item.onclick = () => {
+            openBtn.classList.toggle("active");
+            navPnl.classList.toggle("panelactive");
+          };
+        });
+
+        // マスク処理
+        let maskedSpans = document.getElementsByClassName("masked");
+        Array.from(maskedSpans).forEach((span) => {
+          span.onclick = () => {
+            span.classList.toggle("open");
+          };
+        });
+
+        // クリック処理
+        let options = document.getElementsByClassName("quizes");
+        Array.from(options).forEach((option) => {
+          option.addEventListener('click', function() {
+            let correctOption = this.querySelector('.correct');
+            let incorrectOptions = this.querySelectorAll('.incorrect');
+            let answercontentOption = this.querySelector('.answercontent');
+
+            // rgb(120, 239, 111) == #78ef6f
+            if (correctOption.style.backgroundColor != 'rgb(120, 239, 111)') {
+              correctOption.style.backgroundColor = '#78ef6f';
+              correctOption.style.color = '#000000';
+            
+              incorrectOptions.forEach((incorrect) => {
+                incorrect.style.backgroundColor = '#ef6f6f';
+                incorrect.style.color = '#000000';
+              });
+
+              answercontentOption.style.height = "100%";
+            } else {
+              correctOption.style.backgroundColor = '#dedede';
+              correctOption.style.color = '#000000';
+            
+              incorrectOptions.forEach((incorrect) => {
+                incorrect.style.backgroundColor = '#dedede';
+                incorrect.style.color = '#000000';
+              });
+
+              answercontentOption.style.height = "0px";
+            }
+          });
+        });
+
+        // data-startfrom 属性の行番号カウンタのリセット
+        document.querySelectorAll("div.sourceCode").forEach(function (div) {
+          var startFrom = div.getAttribute("data-startfrom");
+          if (startFrom != null) {
+            div.style.counterReset = "pg-line " + (startFrom - 1);
+          }
+        });
+
+        // 画像にリンクを付与
+        // let images = document.querySelectorAll("figure img");
+        // Array.from(images).forEach((img) => {
+        //   img.onclick = () => {
+        //     location.href = img.getAttribute("src");
+        //   };
+        // });
+      };
+    </script>
+  </body>
+</html>
