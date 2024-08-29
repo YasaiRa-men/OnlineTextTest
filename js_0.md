@@ -17,9 +17,8 @@ var:
 <div class="note type-intro">
 **達成目標**
 
-1. JavaScriptの基本的な記述方法を学ぼう。
+・JavaScriptの基本的な記述方法を学ぼう。
 
-2. 
 </div>
 
 ## はじめに
