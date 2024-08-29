@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+
+    <script>
+      MathJax = {
+        chtml: {
+          displayAlign: "left",
+          displayIndent: "1em",
+        },
+      };
+    </script>
+
+    
+
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title></title>
+  </head>
+
+  <body>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+      <div id="g-nav-list">
+        <!-- ---------------------------------------- -->
+         <ul>
+<li><a href="#環境構築" id="toc-環境構築"><span
+class="toc-section-number">1</span> 環境構築</a>
+<ul>
+<li><a href="#インストール" id="toc-インストール"><span
+class="toc-section-number">1.1</span> インストール</a></li>
+<li><a href="#日本語化" id="toc-日本語化"><span
+class="toc-section-number">1.2</span> 日本語化</a></li>
+</ul></li>
+</ul> 
+        <!-- ---------------------------------------- -->
+      </div>
+    </nav>
+
+    <header class="markdown-body">
+      <p>オンラインテキストテンプレート</p>
+      <p>2024/04/23</p>
+    </header>
+
+    <main class="markdown-body">
+      <!-- ---------------------------------------- -->
+      <h1 data-number="1" id="環境構築"><span
+      class="header-section-number">1</span> 環境構築</h1>
+      <ul>
+      <li>環境構築と聞くと、とても面倒な作業だと思うかもしれませんが、HTML、CSS、JavaScriptの場合とても簡単です！</li>
+      </ul>
+      <div class="note type-tips">
+      <ul>
+      <li><u>Visual Studio Codeをインストールします。</u></li>
+      <li><u>日本語化します。</u></li>
+      </ul>
+      </div>
+      <ul>
+      <li>たったこれだけで環境構築は終了です！</li>
+      </ul>
+      <h2 data-number="1.1" id="インストール"><span
+      class="header-section-number">1.1</span> インストール</h2>
+      <ul>
+      <li>インストールは<a
+      href="https://code.visualstudio.com/download">こちら</a>から</li>
+      </ul>
+      <figure>
+      <img src="figs/build/download.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <ul>
+      <li>自分のPCに合ったもの選んでダウンロード・インストールしましょう。</li>
+      </ul>
+      <h2 data-number="1.2" id="日本語化"><span
+      class="header-section-number">1.2</span> 日本語化</h2>
+      <ul>
+      <li>インストールが完了したら、このような画像になります。</li>
+      </ul>
+      <figure>
+      <img src="figs/build/VSCode_installed.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <ul>
+      <li><p>ここでは、好きなテーマの色を決めましょう。</p></li>
+      <li><p>これでインストールは完了しましたが、このままだと英語で使いづらいので、日本語にしましょう。</p></li>
+      <li><p>四角が4つ描かれたところをクリックしましょう。</p></li>
+      </ul>
+      <figure>
+      <img src="figs/build/kakucho.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <ul>
+      <li>そして、検索バーに「japanese」と入力し、「Japanese Language
+      Pack for Visual Studio Code」の「install」をクリックします。</li>
+      </ul>
+      <figure>
+      <img src="figs/build/ja.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <ul>
+      <li><p>このインストールが完了したら、Visual Studio
+      Codeを再起動しましょう。</p></li>
+      <li><p>これで日本語化も終わりました。</p></li>
+      <li><p>これで環境構築は完了です！</p></li>
+      </ul>
+      <!-- ---------------------------------------- -->
+    </main>
+
+    <footer class="markdown-body">
+      <p><a href="index.html">講義資料のIndexに移動</a></p>
+    </footer>
+
+    <script>
+      window.onload = function () {
+        // ナビゲーション関連
+        let openBtn = document.getElementsByClassName("openbtn")[0];
+        let navPnl = document.getElementById("g-nav");
+        openBtn.onclick = () => {
+          openBtn.classList.toggle("active");
+          navPnl.classList.toggle("panelactive");
+        };
+
+        let items = navPnl.getElementsByTagName("a");
+        Array.from(items).forEach((item) => {
+          item.onclick = () => {
+            openBtn.classList.toggle("active");
+            navPnl.classList.toggle("panelactive");
+          };
+        });
+
+        // マスク処理
+        let maskedSpans = document.getElementsByClassName("masked");
+        Array.from(maskedSpans).forEach((span) => {
+          span.onclick = () => {
+            span.classList.toggle("open");
+          };
+        });
+
+        // クリック処理
+        let options = document.getElementsByClassName("quizes");
+        Array.from(options).forEach((option) => {
+          option.addEventListener('click', function() {
+            let correctOption = this.querySelector('.correct');
+            let incorrectOptions = this.querySelectorAll('.incorrect');
+            let answercontentOption = this.querySelector('.answercontent');
+
+            // rgb(120, 239, 111) == #78ef6f
+            if (correctOption.style.backgroundColor != 'rgb(120, 239, 111)') {
+              correctOption.style.backgroundColor = '#78ef6f';
+              correctOption.style.color = '#000000';
+            
+              incorrectOptions.forEach((incorrect) => {
+                incorrect.style.backgroundColor = '#ef6f6f';
+                incorrect.style.color = '#000000';
+              });
+
+              answercontentOption.style.height = "100%";
+            } else {
+              correctOption.style.backgroundColor = '#dedede';
+              correctOption.style.color = '#000000';
+            
+              incorrectOptions.forEach((incorrect) => {
+                incorrect.style.backgroundColor = '#dedede';
+                incorrect.style.color = '#000000';
+              });
+
+              answercontentOption.style.height = "0px";
+            }
+          });
+        });
+
+        // data-startfrom 属性の行番号カウンタのリセット
+        document.querySelectorAll("div.sourceCode").forEach(function (div) {
+          var startFrom = div.getAttribute("data-startfrom");
+          if (startFrom != null) {
+            div.style.counterReset = "pg-line " + (startFrom - 1);
+          }
+        });
+
+        // 画像にリンクを付与
+        // let images = document.querySelectorAll("figure img");
+        // Array.from(images).forEach((img) => {
+        //   img.onclick = () => {
+        //     location.href = img.getAttribute("src");
+        //   };
+        // });
+      };
+    </script>
+  </body>
+</html>

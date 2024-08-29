@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+
+    <script>
+      MathJax = {
+        chtml: {
+          displayAlign: "left",
+          displayIndent: "1em",
+        },
+      };
+    </script>
+
+     <script
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+type="text/javascript"></script> 
+
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>教育カリキュラム</title>
+  </head>
+
+  <body>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+      <div id="g-nav-list">
+        <!-- ---------------------------------------- -->
+         <ul>
+<li><a href="#概要" id="toc-概要"><span
+class="toc-section-number">1</span> 概要</a>
+<ul>
+<li><a href="#前回の復習" id="toc-前回の復習"><span
+class="toc-section-number">1.1</span> 前回の復習</a></li>
+<li><a href="#今回の講義の達成目標" id="toc-今回の講義の達成目標"><span
+class="toc-section-number">1.2</span> 今回の講義の達成目標</a></li>
+</ul></li>
+<li><a href="#documentオブジェクト" id="toc-documentオブジェクト"><span
+class="toc-section-number">2</span> Documentオブジェクト</a>
+<ul>
+<li><a href="#documentオブジェクトとは"
+id="toc-documentオブジェクトとは"><span
+class="toc-section-number">2.1</span> Documentオブジェクトとは</a></li>
+<li><a href="#html要素の取得" id="toc-html要素の取得"><span
+class="toc-section-number">2.2</span> HTML要素の取得</a></li>
+<li><a href="#html要素の変更" id="toc-html要素の変更"><span
+class="toc-section-number">2.3</span> HTML要素の変更</a></li>
+<li><a href="#新しい要素の作成" id="toc-新しい要素の作成"><span
+class="toc-section-number">2.4</span> 新しい要素の作成</a></li>
+<li><a href="#documentオブジェクトの活用"
+id="toc-documentオブジェクトの活用"><span
+class="toc-section-number">2.5</span>
+Documentオブジェクトの活用</a></li>
+</ul></li>
+<li><a href="#イベントハンドリング" id="toc-イベントハンドリング"><span
+class="toc-section-number">3</span> イベントハンドリング</a>
+<ul>
+<li><a href="#イベントリスナーの追加"
+id="toc-イベントリスナーの追加"><span
+class="toc-section-number">3.1</span> イベントリスナーの追加</a></li>
+</ul></li>
+<li><a href="#距離計算" id="toc-距離計算"><span
+class="toc-section-number">4</span> 距離計算</a></li>
+<li><a href="#まとめ" id="toc-まとめ"><span
+class="toc-section-number">5</span> まとめ</a></li>
+</ul> 
+        <!-- ---------------------------------------- -->
+      </div>
+    </nav>
+
+    <header class="markdown-body">
+      <p>オンラインテキストテンプレート</p>
+      <p>2024/04/23</p>
+    </header>
+
+    <main class="markdown-body">
+      <!-- ---------------------------------------- -->
+      <h1 data-number="1" id="概要"><span
+      class="header-section-number">1</span> 概要</h1>
+      <h2 data-number="1.1" id="前回の復習"><span
+      class="header-section-number">1.1</span> 前回の復習</h2>
+      <ul>
+      <li>ここに前回学んだもの(予定だとHTMLとCSS)の復習を書く。</li>
+      </ul>
+      <h2 data-number="1.2" id="今回の講義の達成目標"><span
+      class="header-section-number">1.2</span> 今回の講義の達成目標</h2>
+      <div class="note type-intro">
+      <p><strong>達成目標</strong></p>
+      <p>ゲームに使用している関数などについて学ぼう</p>
+      </div>
+      <h1 data-number="2" id="documentオブジェクト"><span
+      class="header-section-number">2</span> Documentオブジェクト</h1>
+      <h2 data-number="2.1" id="documentオブジェクトとは"><span
+      class="header-section-number">2.1</span>
+      Documentオブジェクトとは</h2>
+      <ul>
+      <li><p>Documentオブジェクトは、Webページ全体を表すオブジェクトであり、HTML文書全体を操作するためのインターフェースを提供します。JavaScriptを使用して、HTML要素の取得や変更、新しい要素の作成などを行う際にDocumentオブジェクトが活用されます。</p></li>
+      <li><p>今回作成するゲームにて、テキストやボタンの位置、色などの変更はこれらによって指定されています。</p></li>
+      <li><p>Documentオブジェクトは通常、<code>document</code>
+      変数を介してアクセスされます。</p></li>
+      </ul>
+      <h2 data-number="2.2" id="html要素の取得"><span
+      class="header-section-number">2.2</span> HTML要素の取得</h2>
+      <ul>
+      <li>Documentオブジェクトを使用すると、HTML要素を取得することができます。以下は、要素を取得する例です。</li>
+      </ul>
+      <div class="sourceCode" id="cb1" data-caption="index.html"><pre
+      class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;myElement&quot;</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;myClass&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;main.js&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div>
+      <div class="sourceCode" id="cb2" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">// IDを使用して要素を取得</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">let</span> elementById <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;myElement&quot;</span>)<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co">// クラス名を使用して要素を取得</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="kw">let</span> elementsByClass <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementsByClassName</span>(<span class="st">&quot;myClass&quot;</span>)<span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co">// タグ名を使用して要素を取得</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="kw">let</span> elementsByTag <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementsByTagName</span>(<span class="st">&quot;div&quot;</span>)<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li><p>今回の例だと、全て同じ要素を取得しています。</p></li>
+      <li><p>これらを取得することによって、そのHTML要素の文字や色あどがJavaScriptで変更できるようになります。</p></li>
+      </ul>
+      <h2 data-number="2.3" id="html要素の変更"><span
+      class="header-section-number">2.3</span> HTML要素の変更</h2>
+      <ul>
+      <li>ひとまず、HTMLをこのように書いてみよう。</li>
+      </ul>
+      <div class="sourceCode" id="cb3" data-caption="index.html"><pre
+      class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;myElement&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;main.js&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div>
+      <ul>
+      <li>Documentオブジェクトを使用して、<em>textContent</em>で取得したHTML要素の内容を変更することができます。以下は、要素の内容を変更する例です。</li>
+      </ul>
+      <div class="sourceCode" id="cb4" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">let</span> element <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;myElement&quot;</span>)<span class="op">;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>element<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&quot;新しいテキスト&quot;</span><span class="op">;</span></span></code></pre></div>
+      <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/YasaiRa-men/embed/NWVNdmK?default-tab=html%2Cresult&amp;editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/YasaiRa-men/pen/NWVNdmK">
+      Untitled</a> by バナナフライ
+      (<a href="https://codepen.io/YasaiRa-men"><span class="citation"
+      data-cites="YasaiRa-men">@YasaiRa-men</span></a>) on
+      <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+      <p>また、<em>style</em>でcssのスタイルを変更することができます。以下は、要素の内容を変更する例です。</p>
+      <div class="sourceCode" id="cb5" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">let</span> element <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;myElement&quot;</span>)<span class="op">;</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>element<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&quot;新しいテキスト&quot;</span><span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>element<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">color</span> <span class="op">=</span> <span class="st">&quot;red&quot;</span><span class="op">;</span></span></code></pre></div>
+      <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/YasaiRa-men/embed/MWdyJRj?default-tab=html%2Cresult&amp;editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/YasaiRa-men/pen/MWdyJRj">
+      Untitled</a> by バナナフライ
+      (<a href="https://codepen.io/YasaiRa-men"><span class="citation"
+      data-cites="YasaiRa-men">@YasaiRa-men</span></a>) on
+      <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+      <h2 data-number="2.4" id="新しい要素の作成"><span
+      class="header-section-number">2.4</span> 新しい要素の作成</h2>
+      <ul>
+      <li>Documentオブジェクトを使用して、新しいHTML要素を作成し、ページに追加することができます。以下は、新しい要素を作成してページに追加する例です。</li>
+      </ul>
+      <div class="sourceCode" id="cb6" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">let</span> newElement <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">&quot;p&quot;</span>)<span class="op">;</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>newElement<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&quot;新しい段落&quot;</span><span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="fu">appendChild</span>(newElement)<span class="op">;</span></span></code></pre></div>
+      <h2 data-number="2.5" id="documentオブジェクトの活用"><span
+      class="header-section-number">2.5</span>
+      Documentオブジェクトの活用</h2>
+      <ul>
+      <li>Documentオブジェクトを活用することで、動的なWebページの作成や操作が可能となります。JavaScriptを使用して、ユーザーとのインタラクションやページの動的な変更を実現する際にDocumentオブジェクトは重要な役割を果たします。</li>
+      </ul>
+      <div class="note type-quiz">
+      <p>Q.
+      以下のHTMLのp要素に「こんにちは」という文字を入れ、の背景を青に、横幅を100%にしよう。</p>
+      <div class="sourceCode" id="cb7" data-caption="index.html"><pre
+      class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;myElement&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;main.js&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div>
+      <div class="quizes">
+      <div class="options">
+      <div class="option correct">
+      答えを見る
+      </div>
+      </div>
+      <div class="answercontent">
+      <p>答えの一例です。
+      <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/YasaiRa-men/embed/yLWVXjQ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/YasaiRa-men/pen/yLWVXjQ">
+      Untitled</a> by バナナフライ
+      (<a href="https://codepen.io/YasaiRa-men"><span class="citation"
+      data-cites="YasaiRa-men">@YasaiRa-men</span></a>) on
+      <a href="https://codepen.io">CodePen</a>. </iframe></p>
+      </div>
+      </div>
+      </div>
+      <h1 data-number="3" id="イベントハンドリング"><span
+      class="header-section-number">3</span> イベントハンドリング</h1>
+      <ul>
+      <li>イベントハンドリングは、ユーザーからの入力やアクションに応じてプログラムが反応する方法ですJavaScriptを使用すると、Webページ上のイベントを捕捉し、特定の処理を実行することができます。</li>
+      </ul>
+      <div class="sourceCode" id="cb8" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1"></a><span class="bu">document</span><span class="op">.</span><span class="fu">addEventListener</span>(イベント<span class="op">,</span> <span class="kw">function</span>() {</span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="co">// イベントが行われたときに実行されるところ</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;イベントが発生しました。&quot;</span>)<span class="op">;</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>})<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li><p>イベントハンドリングはこのようにして追加することができます。（イベントについては後ほど解説します）</p></li>
+      <li><p>addEventListenerの前のdocumentについて、<code>document</code>だとWeb全体でイベントを監視していて、特定の要素内でイベントを監視したいときには、Documentオブジェクトを書いてあげることで実現できます。</p></li>
+      <li><p>また、イベントで行われる関数には、引数を設定することができ、この引数を使って様々なことができます。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb9" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1"></a><span class="bu">document</span><span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">&quot;wheel&quot;</span><span class="op">,</span> <span class="kw">function</span>(<span class="bu">event</span>) {</span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="co">// イベントが行われたときに実行されるところ</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a>  <span class="bu">event</span><span class="op">.</span><span class="fu">preventDefault</span>()<span class="op">;</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;イベントが発生しました。&quot;</span>)<span class="op">;</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a></span>
+<span id="cb9-7"><a href="#cb9-7"></a>}<span class="op">,</span> { <span class="dt">passive</span><span class="op">:</span> <span class="kw">false</span> })<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li><p>例えば、ホイールでスクロールさせようとしたときに発生するイベントですが、上から下へホイールを動かした際に、ページが上にスクロールしてしまいます。</p></li>
+      <li><p>このようなデフォルトの動作を無効にするために、<code>preventDefault();</code>というものがあり、これを書くことで無効にできます。</p></li>
+      <li><p>また、詳しい解説は省きますが、<code>preventDefault();</code>を使用した際には、<code>addEventListener</code>の第二引数にpassiveをfalseにすることを宣言しておく必要があります。これをしておかないと、<code>preventDefault();</code>がブラウザによって機能しない可能性があります。</p></li>
+      </ul>
+      <h2 data-number="3.1" id="イベントリスナーの追加"><span
+      class="header-section-number">3.1</span>
+      イベントリスナーの追加</h2>
+      <ul>
+      <li><p>イベントリスナーは、例えば、ボタンをクリックしたとき、マウスを動かしたとき、文字を入力したとき…など、様々なイベントが発生したときに呼び出されます。</p></li>
+      <li><p>これを個別で追加することによって、ユーザーが行ったことを検知することができます。</p></li>
+      <li><p>以下は、ボタンクリックイベトにリスナーを追加する例です。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb10" data-caption="index.html"><pre
+      class="sourceCode html"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;myButton&quot;</span><span class="dt">&gt;</span>Click me!<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;main.js&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div>
+      <div class="sourceCode" id="cb11" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">let</span> button <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;myButton&quot;</span>)<span class="op">;</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a></span>
+<span id="cb11-3"><a href="#cb11-3"></a>button<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">&#39;click&#39;</span><span class="op">,</span> <span class="kw">function</span>() {</span>
+<span id="cb11-4"><a href="#cb11-4"></a></span>
+<span id="cb11-5"><a href="#cb11-5"></a>  <span class="fu">alert</span>(<span class="st">&#39;Button was clicked!&#39;</span>)<span class="op">;</span></span>
+<span id="cb11-6"><a href="#cb11-6"></a></span>
+<span id="cb11-7"><a href="#cb11-7"></a>})<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li>この例では、IDが <code>myButton</code>
+      のボタンにクリックイベントリスナーを追加しています。ボタンがクリックされると、アラートが表示されます。</li>
+      </ul>
+      <iframe height="300" style="width: 100%;" scrolling="no" title="btnclick" src="https://codepen.io/YasaiRa-men/embed/vYqapZW?default-tab=html%2Cresult&amp;editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/YasaiRa-men/pen/vYqapZW">
+      btnclick</a> by バナナフライ
+      (<a href="https://codepen.io/YasaiRa-men"><span class="citation"
+      data-cites="YasaiRa-men">@YasaiRa-men</span></a>) on
+      <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+      <ul>
+      <li><p>他にも、キーを押したときの<code>keydown</code>、画面をタッチ操作で動かしたときの<code>touchmove</code>,
+      マウスを動かしたときの<code>mousemove</code>などもあります。</p></li>
+      <li><p>以下の例では、マウスまたは画面を指でスライドしたときに黒丸がその場所に移動するサンプルコードです。</p></li>
+      </ul>
+      <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/YasaiRa-men/embed/abgKZOr?default-tab=html%2Cresult&amp;editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/YasaiRa-men/pen/abgKZOr">
+      Untitled</a> by バナナフライ
+      (<a href="https://codepen.io/YasaiRa-men"><span class="citation"
+      data-cites="YasaiRa-men">@YasaiRa-men</span></a>) on
+      <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+      <ul>
+      <li>この丸を主人公に当てはめることで、常にマウスについてくるようになります。</li>
+      </ul>
+      <h1 data-number="4" id="距離計算"><span
+      class="header-section-number">4</span> 距離計算</h1>
+      <ul>
+      <li><p>障害物に当たるとゲームオーバーになるようにするには、障害物との距離を計算する必要があります。</p></li>
+      <li><p>そこで、それぞれのX座標とY座標は分かっているので、三平方の定理を利用することで距離を求めることができます。</p></li>
+      </ul>
+      <figure>
+      <img src="figs/js/kyori.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <iframe height="300" style="width: 100%;" scrolling="no" title="kyori2" src="https://codepen.io/YasaiRa-men/embed/poXKbpq?default-tab=html%2Cresult&amp;editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/YasaiRa-men/pen/poXKbpq">
+      kyori2</a> by バナナフライ
+      (<a href="https://codepen.io/YasaiRa-men"><span class="citation"
+      data-cites="YasaiRa-men">@YasaiRa-men</span></a>) on
+      <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+      <ul>
+      <li><code>getBoundingClientRect()</code>はターゲット要素をの位置をブラウザの表示領域の左上を(0,
+      0)として、そこからの相対位置で示されています。これによって自分、または障害物がどこにあるのかを調べることができます。</li>
+      </ul>
+      <div class="sourceCode" id="cb12" data-caption="script.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">// 自分の位置を取得</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="kw">const</span> circleRect <span class="op">=</span> circle<span class="op">.</span><span class="fu">getBoundingClientRect</span>()<span class="op">;</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="co">// 障害物の位置を取得</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="kw">const</span> obstacleRect <span class="op">=</span> obstacle<span class="op">.</span><span class="fu">getBoundingClientRect</span>()<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li><p>距離計算の関数について解説します。</p></li>
+      <li><p>距離は、このように計算あうることで求めることができます。</p></li>
+      </ul>
+      <p><span class="math display">\[距離=\sqrt{縦^{2} +
+      横^{2}}\]</span></p>
+      <ul>
+      <li>この式をJavaScriptで書いてみよう！</li>
+      </ul>
+      <div class="sourceCode" id="cb13" data-caption="script.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">// 三平方の定理で距離を計算</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="kw">const</span> distance <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(circleX <span class="op">-</span> obstacleX<span class="op">,</span> <span class="dv">2</span>) <span class="op">+</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(circleY <span class="op">-</span> obstacleY<span class="op">,</span> <span class="dv">2</span>))<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li><p><code>Math.pow()</code>は、累乗を計算できるもので、第一引数には累乗させたい数、第二引数には指数を書きます。上記の例だとそれぞれ自分の位置から障害物までの位置の差を取って、2乗していることが分かります。</p></li>
+      <li><p><code>Math.sqrt()</code>は、平方根を表します。</p></li>
+      <li><p>これらによって、<code>distance</code>に計算された距離を代入されていることが分かりますね！</p></li>
+      <li><p>テキストについての処理はここで行われています。</p></li>
+      </ul>
+      <div class="sourceCode" id="cb14" data-caption="script.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">// 距離をテキストで表示</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a>distanceText<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&#39;Distance: &#39;</span> <span class="op">+</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(distance) <span class="op">+</span> <span class="st">&#39;px&#39;</span><span class="op">;</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a></span>
+<span id="cb14-4"><a href="#cb14-4"></a><span class="co">// 衝突判定 (2つの半径の和より距離が小さい場合)</span></span>
+<span id="cb14-5"><a href="#cb14-5"></a><span class="kw">const</span> radiusSum <span class="op">=</span> circleRect<span class="op">.</span><span class="at">width</span> <span class="op">/</span> <span class="dv">2</span> <span class="op">+</span> obstacleRect<span class="op">.</span><span class="at">width</span> <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a>    </span>
+<span id="cb14-7"><a href="#cb14-7"></a><span class="cf">if</span> (distance <span class="op">&lt;=</span> radiusSum) {</span>
+<span id="cb14-8"><a href="#cb14-8"></a>    collisionText<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&#39;当たり判定：障害物に当たっています！&#39;</span><span class="op">;</span></span>
+<span id="cb14-9"><a href="#cb14-9"></a>} <span class="cf">else</span> {</span>
+<span id="cb14-10"><a href="#cb14-10"></a>    collisionText<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&#39;当たり判定：障害物に当たっていません&#39;</span><span class="op">;</span></span>
+<span id="cb14-11"><a href="#cb14-11"></a>}</span></code></pre></div>
+      <ul>
+      <li><p>Math.round()は小数点以下を四捨五入できるものとなってます。試しに<code>Math.round(distance)</code>のところを<code>distance</code>に変更
+      してみるとどんな変化があるのか試してみよう！</p></li>
+      <li><p>下の条件分岐では、計算された距離が自分と障害物の丸の半径の合計より小さい場合、つまり当たっている場合で表示するテキストを変えています。</p></li>
+      </ul>
+      <h1 data-number="5" id="まとめ"><span
+      class="header-section-number">5</span> まとめ</h1>
+      <ul>
+      <li>このセクションでは、JavaScriptを使って、避けゲーの基盤となる部分を作成しました。</li>
+      </ul>
+      <hr />
+      <p>次回はこれらを組み合わせて実際にゲーム作りにとりかかりましょう！</p>
+      <!-- ---------------------------------------- -->
+    </main>
+
+    <footer class="markdown-body">
+      <p><a href="index.html">講義資料のIndexに移動</a></p>
+    </footer>
+
+    <script>
+      window.onload = function () {
+        // ナビゲーション関連
+        let openBtn = document.getElementsByClassName("openbtn")[0];
+        let navPnl = document.getElementById("g-nav");
+        openBtn.onclick = () => {
+          openBtn.classList.toggle("active");
+          navPnl.classList.toggle("panelactive");
+        };
+
+        let items = navPnl.getElementsByTagName("a");
+        Array.from(items).forEach((item) => {
+          item.onclick = () => {
+            openBtn.classList.toggle("active");
+            navPnl.classList.toggle("panelactive");
+          };
+        });
+
+        // マスク処理
+        let maskedSpans = document.getElementsByClassName("masked");
+        Array.from(maskedSpans).forEach((span) => {
+          span.onclick = () => {
+            span.classList.toggle("open");
+          };
+        });
+
+        // クリック処理
+        let options = document.getElementsByClassName("quizes");
+        Array.from(options).forEach((option) => {
+          option.addEventListener('click', function() {
+            let correctOption = this.querySelector('.correct');
+            let incorrectOptions = this.querySelectorAll('.incorrect');
+            let answercontentOption = this.querySelector('.answercontent');
+
+            // rgb(120, 239, 111) == #78ef6f
+            if (correctOption.style.backgroundColor != 'rgb(120, 239, 111)') {
+              correctOption.style.backgroundColor = '#78ef6f';
+              correctOption.style.color = '#000000';
+            
+              incorrectOptions.forEach((incorrect) => {
+                incorrect.style.backgroundColor = '#ef6f6f';
+                incorrect.style.color = '#000000';
+              });
+
+              answercontentOption.style.height = "100%";
+            } else {
+              correctOption.style.backgroundColor = '#dedede';
+              correctOption.style.color = '#000000';
+            
+              incorrectOptions.forEach((incorrect) => {
+                incorrect.style.backgroundColor = '#dedede';
+                incorrect.style.color = '#000000';
+              });
+
+              answercontentOption.style.height = "0px";
+            }
+          });
+        });
+
+        // data-startfrom 属性の行番号カウンタのリセット
+        document.querySelectorAll("div.sourceCode").forEach(function (div) {
+          var startFrom = div.getAttribute("data-startfrom");
+          if (startFrom != null) {
+            div.style.counterReset = "pg-line " + (startFrom - 1);
+          }
+        });
+
+        // 画像にリンクを付与
+        // let images = document.querySelectorAll("figure img");
+        // Array.from(images).forEach((img) => {
+        //   img.onclick = () => {
+        //     location.href = img.getAttribute("src");
+        //   };
+        // });
+      };
+    </script>
+  </body>
+</html>

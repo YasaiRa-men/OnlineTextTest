@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+
+    <script>
+      MathJax = {
+        chtml: {
+          displayAlign: "left",
+          displayIndent: "1em",
+        },
+      };
+    </script>
+
+    
+
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>教育カリキュラム</title>
+  </head>
+
+  <body>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+      <div id="g-nav-list">
+        <!-- ---------------------------------------- -->
+         <ul>
+<li><a href="#概要" id="toc-概要"><span
+class="toc-section-number">1</span> 概要</a>
+<ul>
+<li><a href="#前回の復習" id="toc-前回の復習"><span
+class="toc-section-number">1.1</span> 前回の復習</a></li>
+<li><a href="#今回の講義の達成目標" id="toc-今回の講義の達成目標"><span
+class="toc-section-number">1.2</span> 今回の講義の達成目標</a></li>
+</ul></li>
+<li><a href="#anime.jsを使用したアニメーションの作成"
+id="toc-anime.jsを使用したアニメーションの作成"><span
+class="toc-section-number">2</span>
+Anime.jsを使用したアニメーションの作成</a>
+<ul>
+<li><a href="#anime.jsの基本" id="toc-anime.jsの基本"><span
+class="toc-section-number">2.1</span> Anime.jsの基本</a></li>
+<li><a href="#anime.jsの応用" id="toc-anime.jsの応用"><span
+class="toc-section-number">2.2</span> Anime.jsの応用</a></li>
+<li><a href="#障害物の落下" id="toc-障害物の落下"><span
+class="toc-section-number">2.3</span> 障害物の落下</a></li>
+</ul></li>
+<li><a href="#まとめ" id="toc-まとめ"><span
+class="toc-section-number">3</span> まとめ</a></li>
+</ul> 
+        <!-- ---------------------------------------- -->
+      </div>
+    </nav>
+
+    <header class="markdown-body">
+      <p>オンラインテキストテンプレート</p>
+      <p>2024/04/23</p>
+    </header>
+
+    <main class="markdown-body">
+      <!-- ---------------------------------------- -->
+      <h1 data-number="1" id="概要"><span
+      class="header-section-number">1</span> 概要</h1>
+      <h2 data-number="1.1" id="前回の復習"><span
+      class="header-section-number">1.1</span> 前回の復習</h2>
+      <ul>
+      <li>ここに前回学んだもの(予定だとHTMLとCSS)の復習を書く。</li>
+      </ul>
+      <h2 data-number="1.2" id="今回の講義の達成目標"><span
+      class="header-section-number">1.2</span> 今回の講義の達成目標</h2>
+      <div class="note type-intro">
+      <p><strong>達成目標</strong></p>
+      <ol type="1">
+      <li><p>JavaScriptの基本的な記述方法を学ぼう。</p></li>
+      <li></li>
+      </ol>
+      </div>
+      <h1 data-number="2"
+      id="anime.jsを使用したアニメーションの作成"><span
+      class="header-section-number">2</span>
+      Anime.jsを使用したアニメーションの作成</h1>
+      <ul>
+      <li>Anime.jsは、軽量で柔軟なJavaScriptアニメーションライブラリです。CSSプロパティ、SVG、DOM属性、そしてJavaScriptオブジェクトをアニメーション化することができます。このライブラリを使用すると、複雑なアニメーションを簡単に作成でき、Webページに動的な視覚効果を加えることが可能です。</li>
+      </ul>
+      <h2 data-number="2.1" id="anime.jsの基本"><span
+      class="header-section-number">2.1</span> Anime.jsの基本</h2>
+      <ul>
+      <li>Anime.jsを使用するには、まずライブラリをページに含める必要があります。以下のスクリプトタグをHTMLに追加して、Anime.jsを読み込みます。</li>
+      </ul>
+      <div class="sourceCode" id="cb1" data-caption="index.html"><pre
+      class="sourceCode numberSource html numberLines"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div>
+      <ul>
+      <li>基本的なアニメーションの設定は非常にシンプルです。以下の例では、CSSセレクタを指定して、特定の要素をアニメーション化します。</li>
+      </ul>
+      <div class="sourceCode" id="cb2" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">anime</span>({</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="dt">targets</span><span class="op">:</span> <span class="st">&#39;.box&#39;</span><span class="op">,</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="dt">translateX</span><span class="op">:</span> <span class="dv">250</span><span class="op">,</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="dt">rotate</span><span class="op">:</span> <span class="st">&#39;1turn&#39;</span><span class="op">,</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="dt">duration</span><span class="op">:</span> <span class="dv">2000</span><span class="op">,</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="dt">loop</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>})<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li>このコードは、クラス名<code>box</code>の要素を右に250ピクセル移動させ、1回転させるアニメーションを作成します。アニメーションの期間は2000ミリ秒で、これが無限に繰り返されます。</li>
+      </ul>
+      <iframe height="300" style="width: 100%;" scrolling="no" title="anime1" src="https://codepen.io/YasaiRa-men/embed/dyBjJKV?default-tab=html%2Cresult&amp;editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/YasaiRa-men/pen/dyBjJKV">
+      anime1</a> by バナナフライ
+      (<a href="https://codepen.io/YasaiRa-men"><span class="citation"
+      data-cites="YasaiRa-men">@YasaiRa-men</span></a>) on
+      <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+      <h2 data-number="2.2" id="anime.jsの応用"><span
+      class="header-section-number">2.2</span> Anime.jsの応用</h2>
+      <ul>
+      <li>Anime.jsは、キーフレームを使用したアニメーションや、複数のアニメーションプロパティの同時制御もサポートしています。以下の例では、複数のアニメーションプロパティを同時に制御し、より複雑なアニメーションを作成しています。</li>
+      </ul>
+      <div class="sourceCode" id="cb3" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">anime</span>({</span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="dt">targets</span><span class="op">:</span> <span class="st">&#39;.box&#39;</span><span class="op">,</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="dt">translateX</span><span class="op">:</span> [</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    { <span class="dt">value</span><span class="op">:</span> <span class="dv">250</span><span class="op">,</span> <span class="dt">duration</span><span class="op">:</span> <span class="dv">1000</span> }<span class="op">,</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>    { <span class="dt">value</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">duration</span><span class="op">:</span> <span class="dv">1000</span> }</span>
+<span id="cb3-6"><a href="#cb3-6"></a>  ]<span class="op">,</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>  <span class="dt">rotate</span><span class="op">:</span> {</span>
+<span id="cb3-8"><a href="#cb3-8"></a>    <span class="dt">value</span><span class="op">:</span> <span class="st">&#39;1turn&#39;</span><span class="op">,</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>    <span class="dt">easing</span><span class="op">:</span> <span class="st">&#39;easeInOutSine&#39;</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>  }<span class="op">,</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>  <span class="dt">scale</span><span class="op">:</span> [</span>
+<span id="cb3-12"><a href="#cb3-12"></a>    { <span class="dt">value</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> <span class="dt">duration</span><span class="op">:</span> <span class="dv">1000</span><span class="op">,</span> <span class="dt">delay</span><span class="op">:</span> <span class="dv">500</span> }<span class="op">,</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>    { <span class="dt">value</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">duration</span><span class="op">:</span> <span class="dv">1000</span> }</span>
+<span id="cb3-14"><a href="#cb3-14"></a>  ]<span class="op">,</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>  <span class="dt">delay</span><span class="op">:</span> <span class="dv">1000</span><span class="op">,</span> <span class="co">// アニメーション開始までの遅延</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>  <span class="dt">loop</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>})<span class="op">;</span></span></code></pre></div>
+      <ul>
+      <li>このコードでは、<code>translateX</code>, <code>rotate</code>,
+      <code>scale</code>の各プロパティを使用して、要素を移動、回転、拡大縮小するアニメーションを作成しています。各プロパティは個別に時間を制御でき、より精密なアニメーションが可能です。</li>
+      </ul>
+      <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/YasaiRa-men/embed/ExBpopN?default-tab=html%2Cresult&amp;editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/YasaiRa-men/pen/ExBpopN">
+      Untitled</a> by バナナフライ
+      (<a href="https://codepen.io/YasaiRa-men"><span class="citation"
+      data-cites="YasaiRa-men">@YasaiRa-men</span></a>) on
+      <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+      <h2 data-number="2.3" id="障害物の落下"><span
+      class="header-section-number">2.3</span> 障害物の落下</h2>
+      <ul>
+      <li>これまでの知識を活かすと、このように上から1秒ごとに鼠色の背景の範囲内でランダムなX座標から障害物(黒い丸)を落下させることができます。</li>
+      </ul>
+      <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/YasaiRa-men/embed/PoraGZd?default-tab=html%2Cresult&amp;editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/YasaiRa-men/pen/PoraGZd">
+      Untitled</a> by バナナフライ
+      (<a href="https://codepen.io/YasaiRa-men"><span class="citation"
+      data-cites="YasaiRa-men">@YasaiRa-men</span></a>) on
+      <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+      <h1 data-number="3" id="まとめ"><span
+      class="header-section-number">3</span> まとめ</h1>
+      <ul>
+      <li>Anime.jsを使用することで、Webページにスムーズで魅力的なアニメーションを簡単に追加できます。このライブラリは、その柔軟性とパワフルな機能により、デベロッパーにとって非常に有用なツールです。</li>
+      </ul>
+      <!-- ---------------------------------------- -->
+    </main>
+
+    <footer class="markdown-body">
+      <p><a href="index.html">講義資料のIndexに移動</a></p>
+    </footer>
+
+    <script>
+      window.onload = function () {
+        // ナビゲーション関連
+        let openBtn = document.getElementsByClassName("openbtn")[0];
+        let navPnl = document.getElementById("g-nav");
+        openBtn.onclick = () => {
+          openBtn.classList.toggle("active");
+          navPnl.classList.toggle("panelactive");
+        };
+
+        let items = navPnl.getElementsByTagName("a");
+        Array.from(items).forEach((item) => {
+          item.onclick = () => {
+            openBtn.classList.toggle("active");
+            navPnl.classList.toggle("panelactive");
+          };
+        });
+
+        // マスク処理
+        let maskedSpans = document.getElementsByClassName("masked");
+        Array.from(maskedSpans).forEach((span) => {
+          span.onclick = () => {
+            span.classList.toggle("open");
+          };
+        });
+
+        // クリック処理
+        let options = document.getElementsByClassName("quizes");
+        Array.from(options).forEach((option) => {
+          option.addEventListener('click', function() {
+            let correctOption = this.querySelector('.correct');
+            let incorrectOptions = this.querySelectorAll('.incorrect');
+            let answercontentOption = this.querySelector('.answercontent');
+
+            // rgb(120, 239, 111) == #78ef6f
+            if (correctOption.style.backgroundColor != 'rgb(120, 239, 111)') {
+              correctOption.style.backgroundColor = '#78ef6f';
+              correctOption.style.color = '#000000';
+            
+              incorrectOptions.forEach((incorrect) => {
+                incorrect.style.backgroundColor = '#ef6f6f';
+                incorrect.style.color = '#000000';
+              });
+
+              answercontentOption.style.height = "100%";
+            } else {
+              correctOption.style.backgroundColor = '#dedede';
+              correctOption.style.color = '#000000';
+            
+              incorrectOptions.forEach((incorrect) => {
+                incorrect.style.backgroundColor = '#dedede';
+                incorrect.style.color = '#000000';
+              });
+
+              answercontentOption.style.height = "0px";
+            }
+          });
+        });
+
+        // data-startfrom 属性の行番号カウンタのリセット
+        document.querySelectorAll("div.sourceCode").forEach(function (div) {
+          var startFrom = div.getAttribute("data-startfrom");
+          if (startFrom != null) {
+            div.style.counterReset = "pg-line " + (startFrom - 1);
+          }
+        });
+
+        // 画像にリンクを付与
+        // let images = document.querySelectorAll("figure img");
+        // Array.from(images).forEach((img) => {
+        //   img.onclick = () => {
+        //     location.href = img.getAttribute("src");
+        //   };
+        // });
+      };
+    </script>
+  </body>
+</html>
