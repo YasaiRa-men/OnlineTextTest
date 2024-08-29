@@ -376,4 +376,22 @@ console.log(message); // -- > エラー
 
 - 上記の例では、`message` 変数は `greet` 関数内で定義されており、関数外からはアクセスできません。関数スコープによって変数のスコープが制限されることで、変数名の衝突や意図しない変更を防ぐことができます。
 
+### 条件分岐
+
+- 条件分岐は、プログラムが特定の条件に応じて異なる処理を行うための構造です。JavaScriptでは、主に`if`、`else if`、`else`文が使用されます。
+
+```javascript{.numberLines caption="main.js"}
+let score = 75;
+
+if (score >= 90) {
+    console.log("完璧！！！");
+} else if (score >= 80) {
+    console.log("すごい！！");
+} else if (score >= 70) {
+    console.log("いいね！");
+} else {
+    console.log("もうちょっと！");
+}
+```
+
 ここで、変数と関数の基本的な解説は終了です。

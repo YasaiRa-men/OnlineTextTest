@@ -92,6 +92,8 @@ id="toc-関数のパラメータと戻り値"><span
 class="toc-section-number">6.2</span> 関数のパラメータと戻り値</a></li>
 <li><a href="#関数のスコープ" id="toc-関数のスコープ"><span
 class="toc-section-number">6.3</span> 関数のスコープ</a></li>
+<li><a href="#条件分岐" id="toc-条件分岐"><span
+class="toc-section-number">6.4</span> 条件分岐</a></li>
 </ul></li>
 </ul> 
         <!-- ---------------------------------------- -->
@@ -482,6 +484,23 @@ class="toc-section-number">6.3</span> 関数のスコープ</a></li>
       <li>上記の例では、<code>message</code> 変数は <code>greet</code>
       関数内で定義されており、関数外からはアクセスできません。関数スコープによって変数のスコープが制限されることで、変数名の衝突や意図しない変更を防ぐことができます。</li>
       </ul>
+      <h2 data-number="6.4" id="条件分岐"><span
+      class="header-section-number">6.4</span> 条件分岐</h2>
+      <ul>
+      <li>条件分岐は、プログラムが特定の条件に応じて異なる処理を行うための構造です。JavaScriptでは、主に<code>if</code>、<code>else if</code>、<code>else</code>文が使用されます。</li>
+      </ul>
+      <div class="sourceCode" id="cb25" data-caption="main.js"><pre
+      class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb25-1"><a href="#cb25-1"></a><span class="kw">let</span> score <span class="op">=</span> <span class="dv">75</span><span class="op">;</span></span>
+<span id="cb25-2"><a href="#cb25-2"></a></span>
+<span id="cb25-3"><a href="#cb25-3"></a><span class="cf">if</span> (score <span class="op">&gt;=</span> <span class="dv">90</span>) {</span>
+<span id="cb25-4"><a href="#cb25-4"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;完璧！！！&quot;</span>)<span class="op">;</span></span>
+<span id="cb25-5"><a href="#cb25-5"></a>} <span class="cf">else</span> <span class="cf">if</span> (score <span class="op">&gt;=</span> <span class="dv">80</span>) {</span>
+<span id="cb25-6"><a href="#cb25-6"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;すごい！！&quot;</span>)<span class="op">;</span></span>
+<span id="cb25-7"><a href="#cb25-7"></a>} <span class="cf">else</span> <span class="cf">if</span> (score <span class="op">&gt;=</span> <span class="dv">70</span>) {</span>
+<span id="cb25-8"><a href="#cb25-8"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;いいね！&quot;</span>)<span class="op">;</span></span>
+<span id="cb25-9"><a href="#cb25-9"></a>} <span class="cf">else</span> {</span>
+<span id="cb25-10"><a href="#cb25-10"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;もうちょっと！&quot;</span>)<span class="op">;</span></span>
+<span id="cb25-11"><a href="#cb25-11"></a>}</span></code></pre></div>
       <p>ここで、変数と関数の基本的な解説は終了です。</p>
       <!-- ---------------------------------------- -->
     </main>
